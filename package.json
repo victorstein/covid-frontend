@@ -1,0 +1,54 @@
+{
+  "name": "covid-frontend",
+  "version": "1.0.0",
+  "description": "Yet another COVID frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "dev": "npm run build:tailwind & npm run watch:tailwind | react-scripts start",
+    "watch:tailwind": "chokidar tailwind.config.js src/index.css -c \"npm run build:tailwind\"",
+    "build:tailwind": "tailwind build src/index.css -o src/tailwind.output.css",
+    "build": "npm run build:tailwind & react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorstein/covid-frontend.git"
+  },
+  "dependencies": {
+    "antd": "^4.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.2"
+  },
+  "keywords": [
+    "Alfonso",
+    "Gomez",
+    "Nicaragua",
+    "React",
+    "Javascript",
+    "Covid"
+  ],
+  "author": "Alfonso Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorstein/covid-frontend/issues"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "tailwindcss": "^1.6.2"
+  }
+}
