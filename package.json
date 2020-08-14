@@ -4,7 +4,7 @@
   "description": "Yet another COVID frontend",
   "main": "index.js",
   "scripts": {
-    "start": "",
+    "start": "npx serve -s build",
     "dev": "npm run build:tailwind & npm run watch:tailwind | react-scripts start",
     "watch:tailwind": "chokidar tailwind.config.js src/index.css -c \"npm run build:tailwind\"",
     "build:tailwind": "tailwind build src/index.css -o src/tailwind.output.css",
