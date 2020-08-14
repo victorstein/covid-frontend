@@ -10,7 +10,11 @@ const { Panel } = Collapse
 
 const Container = (props) => (
   <div className='my-8 w-full flex justify-center'>
-    <Collapse defaultActiveKey={['0']} className='w-full md:w-4/5'>
+    <Collapse
+      ghost
+      destroyInactivePanel
+      className='w-full md:w-4/5'
+    >
       {props.children}
     </Collapse>
   </div>
