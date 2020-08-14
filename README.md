@@ -1,11 +1,11 @@
 # COVID-19 React Frontend
 
 This is yet another COVID-19 React Frontend with a sprinkle of tailwind and ANT Design on top of it...
-<!---
+
 ## Live Example
 
-You may find a live example of the API and a runing GraphQL Playground [Here](https://yetanother-covid-api.herokuapp.com/graphql).
--->
+You may find a live example of the Frontend served through Nginx [Here](https://yet-another-covid-frontend.herokuapp.com/).
+
 ## Installation
 
 * Clone the repo
@@ -16,17 +16,15 @@ You may find a live example of the API and a runing GraphQL Playground [Here](ht
 
 * Install the dependencies
 	```npm install```
-<!---
+
 * Create a .env file with the following set up. (examples in parentheses)
 
 
 | KEY | TYPE | DESCRIPTION | REQUIRED
 | ------ | ------ | ------ | ---------
-PORT |Int| Server Port | False
+REACT_APP_BACKEND_URL |String| Backend URL | True
 NODE_ENV  |String| Node environment | False
-API_KEY  |string| API key to use with [COVID-19](https://rapidapi.com/api-sports/api/covid-193) API | True
-ALLOWED_ORIGINS | comma separated String | for example, http:// localhost, https://frontend.com | False
--->
+
 
 * Finally, just run ```npm run dev``` for development, ```npm run build``` for tailwind and react build, or ```npm start``` (once built) to run from the dist folder
 
