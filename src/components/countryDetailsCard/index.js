@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card } from 'antd'
 import { toLocaleString } from '../../utils'
+import withErrorBoundary from '../hoc/errorHandler'
 
 const renderTitle = (title, amount) => {
   return (
@@ -41,4 +42,4 @@ const CountryDetailsCard = (props) => {
   )
 }
 
-export default CountryDetailsCard
+export default withErrorBoundary(CountryDetailsCard)
