@@ -1,4 +1,13 @@
+
 @import '~antd/dist/antd.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.center-skeleton > div > h3 {
+  margin: 0 auto;
+}
+
+.center-skeleton > div > ul > li {
+  margin: 0 auto;
+}
